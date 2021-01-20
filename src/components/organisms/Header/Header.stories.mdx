@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import { Header } from './Header'
+
+<Meta title="Components/Organisms/Header" component={Header} />
+
+# Header
+
+export const Template = (args) => <Header {...args} />
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      logoUrl: '/images/isaralogo.png',
+      contactText: 'お問い合わせ / 資料請求はこちら',
+      subTitle: 'バンコクのノマドエンジニア育成講座',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Default" />
