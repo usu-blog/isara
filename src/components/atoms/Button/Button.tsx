@@ -9,7 +9,7 @@ export const Button: FC<ButtonProps> = (props) => {
   return (
     <button
       className={classnames([
-        'py-2 px-4 text-sm text-white bg-primary focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 opacity-80 hover:opacity-100',
+        'py-3 px-10 text-sm text-white bg-primary focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 hover:bg-primary-dark',
         roundedClass(),
         props.className,
       ])}
